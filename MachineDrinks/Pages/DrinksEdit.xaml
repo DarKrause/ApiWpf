@@ -1,0 +1,25 @@
+﻿<Page x:Class="MachineDrinks.Pages.DrinksEdit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MachineDrinks.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DrinksEdit">
+
+    <Grid>
+        <StackPanel x:Name="SpEdit" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image Source="{Binding Фото}" x:Name="ImgDrink" Height="100"></Image>
+            <Button x:Name="BtnImg" Click="BtnImg_Click">Выбрать файл</Button>
+            <Label FontSize="20">Название напитка</Label>
+            <TextBox x:Name="TbNameDrink" TextAlignment="Center" FontSize="20"></TextBox>
+            <Label FontSize="20">Стоимость</Label>
+            <TextBox MaxLength="3" PreviewTextInput="TbCostDrink_PreviewTextInput" x:Name="TbCostDrink" TextAlignment="Center" FontSize="20"></TextBox>
+            <Label FontSize="20">Количество</Label>
+            <TextBox MaxLength="3" PreviewTextInput="TbCostDrink_PreviewTextInput" x:Name="TbCountDrink" TextAlignment="Center" FontSize="20"></TextBox>
+            <Button Click="BtnSave_Click" x:Name="BtnSave" Content="Сохранить" FontSize="19"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>
